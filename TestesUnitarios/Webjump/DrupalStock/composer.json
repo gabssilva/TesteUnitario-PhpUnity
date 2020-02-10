@@ -1,0 +1,41 @@
+{
+  "description": "NHS Core Nestle Module Drupal Stock",
+  "license": "Copyright",
+  "name": "webjump/nhs-core-nestle-module-drupal-stock",
+  "type": "magento2-module",
+  "authors": [
+    {
+      "email": "contato@webjump.com.br",
+      "name": "Webjump Core Team"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    },
+    {
+      "type": "composer",
+      "url": "https://bastion-nml.westeurope.cloudapp.azure.com/satis-nhs-core"
+    }
+  ],
+  "require": {
+    "php": "~7.0.0|~7.1.0|~7.2.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "test": "phpunit"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "config":{
+      "secure-http":false
+    },
+    "psr-4": {
+      "Webjump\\DrupalStock\\": ""
+    }
+  }
+}
